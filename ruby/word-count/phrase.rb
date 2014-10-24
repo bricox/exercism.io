@@ -5,9 +5,7 @@ class Phrase
 		@word_count = Hash.new
 		@word_count.default = 0
 
-		phrase = phrase.downcase.gsub(/[^a-z0-9'\s]/i, ' ')
-
-		phrase.split(' ').each do |word|
+		phrase.downcase.gsub(/[^a-z0-9'\s]/i, ' ').split(' ').each do |word|
 			@word_count[word] += 1
 		end
 	end
