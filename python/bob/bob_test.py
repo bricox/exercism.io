@@ -5,7 +5,7 @@ import bob
 
 class BobTests(unittest.TestCase):
     def setUp(self):
-        self.bob = bob.Bob()
+        self.bob = bob
 
     def test_stating_something(self):
         self.assertEqual(
